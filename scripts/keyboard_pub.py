@@ -1,48 +1,32 @@
 import rclpy
+from get_key_pressed import execute
 from rclpy.node import Node
 from std_msgs.msg import String
 
-import sys
-
-if sys.platform == 'win32':
-    import msvcrt
-else:
-    import termios
-    # terminal control function. Build for UNIX
-    import tty # teletype writer
-
-class keyboardPublisher(Node):
-    def __init__(self):
+class KeyboardPublisher(Node):
+    def __init__(self, key):
         super().__init__("keyboard_pub_node")
         self.pub = self.create_publisher(String, "keyboard_pub_topic", 10)
-        timer_period = 2  # seconds
-        self.timer = self.create_timer(timer_period, self.publish_keyboard)
-        settings = self.saveTerminalSettings()
-
-    def getKey(settings):
-        if sys.platform == 'win32':
-            # getwch() returns a string on Windows
-            key = msvcrt.getwch()
-        else:
-            tty.setraw(sys.stdin.fileno())
-            key = sys.stdin.read(1)
-            termios.tcsetattr(sys.stdin, termios.TCSADRAIN, settings)
-        return key
-
-    def saveTerminalSettings():
-        if sys.platform == 'win32':
-            return None
-        return termios.tcgetattr(sys.stdin)
-
-    def restoreTerminalSettings(old_settings):
-        if sys.platform == 'win32':
-            return
-        termios.tcsetattr(sys.stdin, termios.TCSADRAIN, old_settings)
-
-    def execute(key):
-        print('You pressed {} on the keyboard'.format(key))
-
+        self.timer = self.create_timer(2, self.publish_keyboard)
+        self.key = key
+        
     def publish_keyboard(self):
         msg = String()
-        msg.data = self.execute()
+        msg.data = self.key
         self.pub.publish(msg)
+
+def main():
+    key = execute()
+    rclpy.init()
+    key_pub = KeyboardPublisher(key)
+
+    print("Publisher Node Running...")
+    
+    try:
+        rclpy.spin(key_pub)
+    except KeyboardInterrupt:
+        key_pub.destroy_node()
+        rclpy.shutdown()
+
+if __name__ == '__main__':
+    main()
