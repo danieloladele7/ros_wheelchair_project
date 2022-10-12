@@ -1,0 +1,8 @@
+source;share/ros_wheelchair_project/hook/cmake_prefix_path.ps1
+source;share/ros_wheelchair_project/hook/cmake_prefix_path.dsv
+source;share/ros_wheelchair_project/hook/cmake_prefix_path.sh
+source;share/ros_wheelchair_project/local_setup.bash
+source;share/ros_wheelchair_project/local_setup.dsv
+source;share/ros_wheelchair_project/local_setup.ps1
+source;share/ros_wheelchair_project/local_setup.sh
+source;share/ros_wheelchair_project/local_setup.zsh

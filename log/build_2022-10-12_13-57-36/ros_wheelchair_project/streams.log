@@ -1,0 +1,55 @@
+[0.045s] Invoking command in '/home/daniel/ROS_Workspaces/ros2_ws/src/ros_wheelchair_project/build/ros_wheelchair_project': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/daniel/ROS_Workspaces/ros2_ws/src/ros_wheelchair_project -DCMAKE_INSTALL_PREFIX=/home/daniel/ROS_Workspaces/ros2_ws/src/ros_wheelchair_project/install/ros_wheelchair_project
+[0.571s] -- The C compiler identification is GNU 9.4.0
+[0.764s] -- The CXX compiler identification is GNU 9.4.0
+[0.779s] -- Check for working C compiler: /usr/bin/cc
+[0.988s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.990s] -- Detecting C compiler ABI info
+[1.140s] -- Detecting C compiler ABI info - done
+[1.167s] -- Detecting C compile features
+[1.168s] -- Detecting C compile features - done
+[1.173s] -- Check for working CXX compiler: /usr/bin/c++
+[1.382s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[1.385s] -- Detecting CXX compiler ABI info
+[1.725s] -- Detecting CXX compiler ABI info - done
+[1.749s] -- Detecting CXX compile features
+[1.751s] -- Detecting CXX compile features - done
+[1.765s] -- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)
+[1.832s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[1.833s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[2.560s] -- Found ament_lint_auto: 0.9.7 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[2.831s] -- Added test 'copyright' to check source files copyright and LICENSE
+[2.862s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[2.863s] -- Configured cppcheck include dirs: 
+[2.864s] -- Configured cppcheck exclude dirs and/or files: 
+[2.891s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[2.892s] -- Configured cpplint exclude dirs and/or files: 
+[2.902s] -- Added test 'flake8' to check Python code syntax and style conventions
+[2.913s] -- Added test 'lint_cmake' to check CMake code style
+[2.917s] -- Added test 'pep257' to check Python code against some of the style conventions in PEP 257
+[2.944s] -- Added test 'uncrustify' to check C / C++ code style
+[2.945s] -- Configured uncrustify additional arguments: 
+[2.949s] -- Added test 'xmllint' to check XML markup files
+[2.956s] -- Configuring done
+[2.968s] -- Generating done
+[2.972s] -- Build files have been written to: /home/daniel/ROS_Workspaces/ros2_ws/src/ros_wheelchair_project/build/ros_wheelchair_project
+[2.986s] Invoked command in '/home/daniel/ROS_Workspaces/ros2_ws/src/ros_wheelchair_project/build/ros_wheelchair_project' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/daniel/ROS_Workspaces/ros2_ws/src/ros_wheelchair_project -DCMAKE_INSTALL_PREFIX=/home/daniel/ROS_Workspaces/ros2_ws/src/ros_wheelchair_project/install/ros_wheelchair_project
+[3.001s] Invoking command in '/home/daniel/ROS_Workspaces/ros2_ws/src/ros_wheelchair_project/build/ros_wheelchair_project': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/daniel/ROS_Workspaces/ros2_ws/src/ros_wheelchair_project/build/ros_wheelchair_project -- -j4 -l4
+[3.122s] Invoked command in '/home/daniel/ROS_Workspaces/ros2_ws/src/ros_wheelchair_project/build/ros_wheelchair_project' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/daniel/ROS_Workspaces/ros2_ws/src/ros_wheelchair_project/build/ros_wheelchair_project -- -j4 -l4
+[3.255s] Invoking command in '/home/daniel/ROS_Workspaces/ros2_ws/src/ros_wheelchair_project/build/ros_wheelchair_project': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/daniel/ROS_Workspaces/ros2_ws/src/ros_wheelchair_project/build/ros_wheelchair_project
+[3.276s] -- Install configuration: ""
+[3.277s] -- Installing: /home/daniel/ROS_Workspaces/ros2_ws/src/ros_wheelchair_project/install/ros_wheelchair_project/share/ament_index/resource_index/package_run_dependencies/ros_wheelchair_project
+[3.278s] -- Installing: /home/daniel/ROS_Workspaces/ros2_ws/src/ros_wheelchair_project/install/ros_wheelchair_project/share/ament_index/resource_index/parent_prefix_path/ros_wheelchair_project
+[3.278s] -- Installing: /home/daniel/ROS_Workspaces/ros2_ws/src/ros_wheelchair_project/install/ros_wheelchair_project/share/ros_wheelchair_project/environment/ament_prefix_path.sh
+[3.280s] -- Installing: /home/daniel/ROS_Workspaces/ros2_ws/src/ros_wheelchair_project/install/ros_wheelchair_project/share/ros_wheelchair_project/environment/ament_prefix_path.dsv
+[3.280s] -- Installing: /home/daniel/ROS_Workspaces/ros2_ws/src/ros_wheelchair_project/install/ros_wheelchair_project/share/ros_wheelchair_project/environment/path.sh
+[3.281s] -- Installing: /home/daniel/ROS_Workspaces/ros2_ws/src/ros_wheelchair_project/install/ros_wheelchair_project/share/ros_wheelchair_project/environment/path.dsv
+[3.282s] -- Installing: /home/daniel/ROS_Workspaces/ros2_ws/src/ros_wheelchair_project/install/ros_wheelchair_project/share/ros_wheelchair_project/local_setup.bash
+[3.283s] -- Installing: /home/daniel/ROS_Workspaces/ros2_ws/src/ros_wheelchair_project/install/ros_wheelchair_project/share/ros_wheelchair_project/local_setup.sh
+[3.284s] -- Installing: /home/daniel/ROS_Workspaces/ros2_ws/src/ros_wheelchair_project/install/ros_wheelchair_project/share/ros_wheelchair_project/local_setup.zsh
+[3.284s] -- Installing: /home/daniel/ROS_Workspaces/ros2_ws/src/ros_wheelchair_project/install/ros_wheelchair_project/share/ros_wheelchair_project/local_setup.dsv
+[3.285s] -- Installing: /home/daniel/ROS_Workspaces/ros2_ws/src/ros_wheelchair_project/install/ros_wheelchair_project/share/ros_wheelchair_project/package.dsv
+[3.285s] -- Installing: /home/daniel/ROS_Workspaces/ros2_ws/src/ros_wheelchair_project/install/ros_wheelchair_project/share/ament_index/resource_index/packages/ros_wheelchair_project
+[3.286s] -- Installing: /home/daniel/ROS_Workspaces/ros2_ws/src/ros_wheelchair_project/install/ros_wheelchair_project/share/ros_wheelchair_project/cmake/ros_wheelchair_projectConfig.cmake
+[3.286s] -- Installing: /home/daniel/ROS_Workspaces/ros2_ws/src/ros_wheelchair_project/install/ros_wheelchair_project/share/ros_wheelchair_project/cmake/ros_wheelchair_projectConfig-version.cmake
+[3.287s] -- Installing: /home/daniel/ROS_Workspaces/ros2_ws/src/ros_wheelchair_project/install/ros_wheelchair_project/share/ros_wheelchair_project/package.xml
+[3.291s] Invoked command in '/home/daniel/ROS_Workspaces/ros2_ws/src/ros_wheelchair_project/build/ros_wheelchair_project' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/daniel/ROS_Workspaces/ros2_ws/src/ros_wheelchair_project/build/ros_wheelchair_project
